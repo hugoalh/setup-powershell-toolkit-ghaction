@@ -4,8 +4,8 @@ title: "Setup PowerShell Toolkit (GitHub Action)"
 message: "If you use this software, please cite it using the metadata from this file."
 type: "software"
 authors:
-  - name: "hugoalh Studio"
-repository-code: "https://github.com/hugoalh-studio/setup-powershell-toolkit-ghaction"
+  - name: "hugoalh"
+repository-code: "https://github.com/hugoalh/setup-powershell-toolkit-ghaction"
 keywords:
   - "gh-action"
   - "ghaction"

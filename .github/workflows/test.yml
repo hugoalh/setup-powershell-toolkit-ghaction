@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
     steps:
       - name: "Setup CurrentUser"
-        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@main"
+        uses: "hugoalh/setup-powershell-toolkit-ghaction@main"
       - name: "Test CurrentUser"
         run: |
           Import-Module -Name 'hugoalh.GitHubActionsToolkit' -Scope 'Local'
@@ -24,7 +24,7 @@ jobs:
           Write-GitHubActionsNotice -Message 'Hello, world!'
         shell: "pwsh"
       - name: "Setup AllUsers"
-        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@main"
+        uses: "hugoalh/setup-powershell-toolkit-ghaction@main"
         with:
           sudo: "True"
           scope: "AllUsers"
@@ -36,7 +36,7 @@ jobs:
           Write-GitHubActionsNotice -Message 'Hello, world!'
         shell: "pwsh"
       - name: "Setup Uninstall"
-        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@main"
+        uses: "hugoalh/setup-powershell-toolkit-ghaction@main"
         with:
           sudo: "True"
           version: "False"
